@@ -1,0 +1,20 @@
+{
+  "name": "catapolisapi",
+  "module": "index.tsx",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.tsx",
+    "dev": "bun --hot index.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "figlet": "^1.7.0",
+    "redis": "^4.6.12"
+  }
+}
