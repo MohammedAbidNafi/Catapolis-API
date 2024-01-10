@@ -1,4 +1,4 @@
-# catapolisapi
+# Catapolis-API
 
 To install dependencies:
 
