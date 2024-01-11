@@ -11,6 +11,9 @@ const client = createClient({
   },
 });
 
+const serverAddress = "0.0.0.0";
+const serverPort = 12000;
+
 client.on("error", (err) => console.log("Redis Client Error", err));
 
 (async () => {
@@ -74,8 +77,8 @@ client.on("error", (err) => console.log("Redis Client Error", err));
       res.writeHead(500, { "Content-Type": "text/plain" });
       res.end("Internal Server Error");
     }
-  }).listen(3000, () => {
-    console.log("Server is running on http://localhost:3000");
+  }).listen(serverPort, serverAddress, () => {
+    console.log(`Server is running on http://${serverAddress}:${serverPort}`);
   });
 })();
 
