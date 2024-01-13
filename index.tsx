@@ -40,6 +40,17 @@ client.on("error", (err) => console.log("Redis Client Error", err));
         return;
       }
 
+      if (path === "/submit.html") {
+        // Serve the index.html file
+        const htmlContent = await readFile(
+          resolve(__dirname, "submit.html"),
+          "utf-8"
+        );
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(htmlContent);
+        return;
+      }
+
       if (path === "/facts") {
         const count = await client.get("counter");
         const id = getRandomInt(count);

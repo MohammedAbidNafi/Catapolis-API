@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a New Fact</title>
+</head>
+<body>
+  <h1>Submit a New Fact</h1>
+  <form id="factForm">
+    <label for="factInput">Fact:</label>
+    <input type="text" id="factInput" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('factForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const factInput = document.getElementById('factInput');
+      const fact = factInput.value;
+
+      // Send the fact to the server
+      const response = await fetch('/submit-fact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ fact }),
+      });
+
+      // Reset the form and display a message
+      factInput.value = '';
+      alert('Fact submitted successfully!');
+    });
+  </script>
+</body>
+</html>
