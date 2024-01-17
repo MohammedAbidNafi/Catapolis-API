@@ -24,7 +24,7 @@ Base URL for all endpoints
 
 <h2 id="endpoints">Endpoints</h2>
 <p><a href="/facts"><code class="language-plaintext highlighter-rouge">/facts</code></a>
-Retrieve and query facts</p>
+Retrieve facts</p>
 
 <p><a href="/submit.html"><code class="language-plaintext highlighter-rouge">/submit-fact</code></a>*
 Submit facts</p>
