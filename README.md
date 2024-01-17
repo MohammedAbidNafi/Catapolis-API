@@ -36,8 +36,10 @@ Submit facts</p>
 <p><sub> Please be sensible and dont spam we are still working on security of this. </sub></p>
 
 <h2 id="models">Models</h2>
-<p><a href="/facts"><code class="language-plaintext highlighter-rouge">Fact</code></a>
+<p><a href="https://catapolis.fun/facts"><code class="language-plaintext highlighter-rouge">Fact</code></a>
 An animal fact</p>
 
-<p><a href="/submit.html"><code class="language-plaintext highlighter-rouge">Submit Fact</code></a>
+<p><a href="https://catapolis.fun/submit.html"><code class="language-plaintext highlighter-rouge">Submit Fact</code></a>
 Submit your cat facts here</p>
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="abidnafi" data-color="#FFDD00" data-emoji=""  data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
